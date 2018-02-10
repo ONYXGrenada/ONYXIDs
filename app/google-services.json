@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "724744964375",
+    "firebase_url": "https://onyxids-227ff.firebaseio.com",
+    "project_id": "onyxids-227ff",
+    "storage_bucket": "onyxids-227ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724744964375:android:9aa2e1d631e3f1f9",
+        "android_client_info": {
+          "package_name": "com.onyxgrenada.onyxids"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724744964375-pvj2i6flbrf6gnhdt55olbqj8nr4j4tt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onyxgrenada.onyxids",
+            "certificate_hash": "8d9576af0bad53f38b5993ade25bee12c00cd375"
+          }
+        },
+        {
+          "client_id": "724744964375-u6q98njkfo15egcu537qv3kuereberoa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAANxJgRQAKGydo5QK5coYk-6W3qscjDAQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724744964375-u6q98njkfo15egcu537qv3kuereberoa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
