@@ -132,7 +132,9 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener, GoogleApiClient
     }
 
     companion object {
-
+        init {
+            System.loadLibrary("native-lib")
+        }
         /**
          * Id to identity READ_CONTACTS permission request.
          */
