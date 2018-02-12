@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity: FragmentActivity() {
+class MainActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,12 +27,12 @@ class MainActivity: FragmentActivity() {
         txt_welcome_text.text = "Welcome $displayName"
 
 
-        if (savedInstanceState == null){
+        /*if (savedInstanceState == null){
             supportFragmentManager
                     .beginTransaction()
                     .add(R.id.linearLayout, IDFragment.newInstance(), "IDList")
                     .commit()
-        }
+        }*/
     }
 
     /**
