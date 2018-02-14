@@ -24,20 +24,28 @@ class IDFragment : Fragment() {
     //private var mParam1: String? = null
     //private var mParam2: String? = null
 
-    private var mListener: OnFragmentInteractionListener? = null
+   // private var mListener: OnFragmentInteractionListener? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    /*override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        if (arguments != null) {
+        /*if (arguments != null) {
             //mParam1 = arguments!!.getString(ARG_PARAM1)
             //mParam2 = arguments!!.getString(ARG_PARAM2)
-        }
-    }
+        }*/
+    }*/
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_id, container, false)
+        //val view: View = inflater!!.inflate(R.layout.fragment_id, container,
+        //        false)
+        //val activity = activity
+        //val recyclerView = view.findViewById<RecyclerView>(R.id.recycler_view) as RecyclerView
+        //recyclerView.layoutManager = GridLayoutManager(activity, 2)
+        //recyclerView.adapter = RageComicAdapter(activity)
+        //return view
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -47,19 +55,19 @@ class IDFragment : Fragment() {
         }
     }*/
 
-    override fun onAttach(context: Context?) {
+    /*override fun onAttach(context: Context?) {
         super.onAttach(context)
         if (context is OnFragmentInteractionListener) {
             mListener = context
         } else {
             throw RuntimeException(context!!.toString() + " must implement OnFragmentInteractionListener")
         }
-    }
+    }*/
 
-    override fun onDetach() {
+    /*override fun onDetach() {
         super.onDetach()
         mListener = null
-    }
+    }*/
 
     /**
      * This interface must be implemented by activities that contain this
@@ -70,10 +78,10 @@ class IDFragment : Fragment() {
      *
      * See the Android Training lesson [Communicating with Other Fragments](http://developer.android.com/training/basics/fragments/communicating.html) for more information.
      */
-    interface OnFragmentInteractionListener {
+    /*interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         fun onFragmentInteraction(uri: Uri)
-    }
+    }*/
 
     companion object {
         // TODO: Rename parameter arguments, choose names that match
@@ -91,12 +99,8 @@ class IDFragment : Fragment() {
          */
         // TODO: Rename and change types and number of parameters
         fun newInstance(): IDFragment {
-            val fragment = IDFragment()
-            val args = Bundle()
-            //args.putString(ARG_PARAM1, param1)
-            //args.putString(ARG_PARAM2, param2)
-            fragment.arguments = args
-            return fragment
+
+            return IDFragment()
         }
     }
 }// Required empty public constructor

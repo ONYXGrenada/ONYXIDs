@@ -27,12 +27,12 @@ class MainActivity: AppCompatActivity() {
         txt_welcome_text.text = "Welcome $displayName"
 
 
-        /*if (savedInstanceState == null){
+        if (savedInstanceState == null){
             supportFragmentManager
                     .beginTransaction()
-                    .add(R.id.linearLayout, IDFragment.newInstance(), "IDList")
+                    .add(R.id.idContainer, IDFragment.newInstance(), "IDList")
                     .commit()
-        }*/
+        }
     }
 
     /**
