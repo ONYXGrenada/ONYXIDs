@@ -1,10 +1,20 @@
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/idCard"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="100dp"
+        android:background="@drawable/custom_border_white">
+
+        <!--<ImageView
+            android:id="@+id/smallIdImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>-->
 
 
+        <TextView
+            android:id="@+id/idCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/driver_permit" />
+    </LinearLayout>
