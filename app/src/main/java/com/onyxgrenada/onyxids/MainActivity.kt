@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.provider.AlarmClock.EXTRA_MESSAGE
 import android.support.v4.app.FragmentActivity
 import android.util.Log
+import android.view.Menu
 import android.view.View
 import android.widget.Toast
 import com.google.android.gms.auth.api.Auth
@@ -23,6 +24,10 @@ class MainActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        setSupportActionBar(findViewById(R.id.menu_toolbar))
+        
+
         val displayName = intent.getStringExtra(EXTRA_MESSAGE)
         txt_welcome_text.text = "Welcome $displayName"
 
@@ -35,6 +40,10 @@ class MainActivity: AppCompatActivity() {
         }
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_items, menu)
+        return true
+    }
     /**
      * A native method that is implemented by the 'native-lib' native library,
      * which is packaged with this application.
